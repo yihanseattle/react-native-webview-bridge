@@ -14,6 +14,8 @@ class JavascriptBridge {
 
     public JavascriptBridge(WebView webView) {
         this.webView = webView;
+
+        this.webView.setWebViewClient(new MyAppWebViewClient());
     }
 
     @JavascriptInterface
